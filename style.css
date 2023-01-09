@@ -1,0 +1,29 @@
+
+body{
+    background-image:url(bg.jpg);
+    background-repeat:round;
+    background-size:cover;
+}
+.delete, .edit{
+    cursor: pointer;
+}
+li{ 
+    animation: slide-in .5s ease 0s 1 alternate-reverse both;
+    position:relative;
+    text-overflow: ellipsis;
+    
+
+}
+@keyframes slide-in{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 80px;
+        
+    }
+}
+
+.add_btn:hover{
+    border:2px solid greenyellow;
+}
